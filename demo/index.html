@@ -3,14 +3,29 @@
 	<head>
 		<title>jQuery Boilerplate</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-		<script src="../src/jquery.boilerplate.js"></script>
+		<script src="../src/jquery.jumper.js"></script>
 	</head>
 	<body>
-		<div id="element"></div>
+		<div id="main">
+			<input type="text" id="dia" value="" placeholder="DD"> <br>
+			<input type="text" id="mes" value="" placeholder="MM"> <br>
+			<input type="text" id="ano" value="" placeholder="YYYY">  <br>
+			<input type="text" id="cep" value="" placeholder="888888888"> <br>
+
+		</div>
 		<script>
 			$(function() {
-				$("#element").defaultPluginName({
-					propertyName: "a custom value"
+				$("#dia").jumper({
+					equals: 2,
+					target: "#mes"
+				});
+				$("#mes").jumper({
+					equals: 2,
+					target: "#ano"
+				});
+				$("#ano").jumper({
+					equals: 4,
+					target: "#cep"
 				});
 			});
 		</script>

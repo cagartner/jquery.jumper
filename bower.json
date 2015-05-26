@@ -1,18 +1,19 @@
 {
-	"name": "jquery-boilerplate",
-	"version": "3.5.0",
+	"name": "jquery.jumper",
+	"version": "1.0",
 	"homepage": "http://jqueryboilerplate.com",
 	"authors": [
-		"Zeno Rocha <hi@zenorocha.com>"
+		"Carlso Gartner <contato@carlosgartner.com.br>"
 	],
-	"description": "A jump-start for jQuery plugins development.",
-	"main": "src/jquery.boilerplate.js",
+	"description": "Jump focus for inputs",
+	"main": "src/jquery.jumper.js",
 	"keywords": [
 		"jquery",
 		"plugin",
-		"boilerplate",
+		"focus",
+		"input",
 		"jquery-plugin",
-		"jquery-boilerplate"
+		"jquery-jumer"
 	],
 	"license": "MIT"
 }
